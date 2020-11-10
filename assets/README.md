@@ -35,8 +35,9 @@
 
 ## Questions
 
- f
- f
+ [github.com/sethglenn](https://github.com/sethglenn)
+
+ s
 
  Contact me at my email or github profile above for any inquiries you may have.
 

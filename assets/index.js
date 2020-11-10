@@ -105,7 +105,8 @@ const generateReadme = (answers) =>
 
 ## Questions
 
- ${ answers.github }
+ [github.com/${answers.github}](https://github.com/${ answers.github })
+
  ${ answers.email }
 
  Contact me at my email or github profile above for any inquiries you may have.

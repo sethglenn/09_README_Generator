@@ -50,6 +50,18 @@ inquirer.prompt([
             ]
 
         },
+        {
+            type: "input",
+            message: "What is your Github username?",
+            name: "github",
+
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email",
+
+        },
 
 
 
@@ -62,25 +74,42 @@ const generateReadme = (answers) =>
    
   ${ answers.license}
 
+## Table of Contents
+
+ - [Description](##Description)
+ - [Installation](##Installation-Instructions)
+ - [Usage Information](##Usage-Information)
+ - [Contribution Guidelines](##Contribution-Guidelines)
+ - [Test Instructions](##Test-Instructions)
+ - [Questions](##Questions)
+
 ## Description
 
  ${ answers.description }
 
-## Installation Instructions
+## Installation-Instructions
 
  ${ answers.installationInstructions }
 
-## Usage Information
+## Usage-Information
 
  ${ answers.usageInformation }
 
-## Contribution Guidelines
+## Contribution-Guidelines
 
  ${ answers.contributionGuidelines }
 
-## Test Instructions
+## Test-Instructions
 
  ${ answers.testInstructions }
+
+## Questions
+
+ ${ answers.github }
+ ${ answers.email }
+
+ Contact me at my email or github profile above for any inquiries you may have.
+
         
 `
 

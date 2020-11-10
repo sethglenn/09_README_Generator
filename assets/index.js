@@ -38,6 +38,18 @@ inquirer.prompt([
             message: "Input test instructions?",
             name: "testInstructions",
         },
+        {
+            type: "list",
+            message: "What license would you like?",
+            name: "license",
+            choices: [
+                "MIT",
+                "IBM",
+                "ISC",
+                "Mozilla",
+            ]
+
+        },
 
 
 

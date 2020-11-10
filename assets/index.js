@@ -55,32 +55,32 @@ inquirer.prompt([
 
     ])
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-    
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
-
-
 const generateReadme = (answers) =>
 `# ${ answers.title }
 
-## ${ answers.description }
+## License
+   
+  ${ answers.license}
 
-## ${ answers.installationInstructions }
+## Description
 
-## ${ answers.usageInformation }
+ ${ answers.description }
 
-## ${ answers.contributionGuidelines }
+## Installation Instructions
 
-## ${ answers.testInstructions }
+ ${ answers.installationInstructions }
+
+## Usage Information
+
+ ${ answers.usageInformation }
+
+## Contribution Guidelines
+
+ ${ answers.contributionGuidelines }
+
+## Test Instructions
+
+ ${ answers.testInstructions }
         
 `
 

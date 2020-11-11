@@ -2,7 +2,7 @@
 
 ## License
    
-  MIT
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -35,9 +35,9 @@
 
 ## Questions
 
- [github.com/sethglenn](https://github.com/sethglenn)
+ [github.com/f](https://github.com/f)
 
- s
+ f
 
  Contact me at my email or github profile above for any inquiries you may have.
 

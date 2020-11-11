@@ -67,12 +67,18 @@ inquirer.prompt([
 
     ])
 
-const generateReadme = (answers) =>
-`# ${ answers.title }
+const generateReadme = (answers) => {
+    let license;
+
+    if (answers.license === "MIT") {
+        license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+
+    return `# ${answers.title}
 
 ## License
    
-  ${ answers.license}
+  ${license}
 
 ## Table of Contents
 
@@ -85,34 +91,36 @@ const generateReadme = (answers) =>
 
 ## Description
 
- ${ answers.description }
+ ${answers.description}
 
 ## Installation-Instructions
 
- ${ answers.installationInstructions }
+ ${answers.installationInstructions}
 
 ## Usage-Information
 
- ${ answers.usageInformation }
+ ${answers.usageInformation}
 
 ## Contribution-Guidelines
 
- ${ answers.contributionGuidelines }
+ ${answers.contributionGuidelines}
 
 ## Test-Instructions
 
- ${ answers.testInstructions }
+ ${answers.testInstructions}
 
 ## Questions
 
- [github.com/${answers.github}](https://github.com/${ answers.github })
+ [github.com/${answers.github}](https://github.com/${answers.github})
 
- ${ answers.email }
+ ${answers.email}
 
  Contact me at my email or github profile above for any inquiries you may have.
 
         
 `
+}
+
 
 promptUser()
     .then((answers) => writeFileAsync("./README.md", generateReadme(answers)))

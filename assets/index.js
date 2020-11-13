@@ -73,6 +73,15 @@ const generateReadme = (answers) => {
     if (answers.license === "MIT") {
         license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     }
+    if (answers.license === "IBM") {
+        license = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
+    }
+    if (answers.license === "ISC") {
+        license = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+    }
+    if (answers.license === "Mozilla") {
+        license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
 
     return `# ${answers.title}
 
